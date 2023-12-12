@@ -1,0 +1,13 @@
+sudo apt update
+sudo apt install apache2 wget unzip -y
+sudo systemctl start apache2
+sudo systemctl enable apache2
+sudo systemctl status apache2
+sudo mkdir -p /tmp/webfiles
+sudo cd /tmp/webfiles
+wget https://templatemo.com/tm-zip-files-2020/templatemo_520_highway.zip
+unzip -o templatemo_520_highway.zip
+cp -r templatemo_520_highway/* /var/www/html/
+sudo systemctl restart apache2
+
+
