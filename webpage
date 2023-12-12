@@ -8,6 +8,6 @@ sudo cd /tmp/webfiles
 wget https://templatemo.com/tm-zip-files-2020/templatemo_520_highway.zip
 unzip -o templatemo_520_highway.zip
 cp -r templatemo_520_highway/* /var/www/html/
-sudo systemctl enabled apache2
+sudo systemctl restart apache2
 
 
